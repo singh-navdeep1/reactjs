@@ -1,10 +1,13 @@
-function Hello() {
-    let hll = "hello"
-    let wor = "world"
-    
-    let result = hll + wor
+import Counter from './component/count'
+import Profile from './component/profile'
+import { useState } from "react"
 
-    return result
+function App() {
+    const [data, setData] = useState(0)
+    // let data= {name:"Levi",age : 28, show :"aot" }
+
+    // return <Profile data={data}/>
+    return < Counter/>
 }
 
 export default App
